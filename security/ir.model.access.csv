@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_website_sitemap_website_sitemap,website_sitemap.website_sitemap,model_website_sitemap_website_sitemap,,1,0,0,0
+access_website_sitemap_website_sitemap,"website sitemap view",model_website_sitemap_extended,,1,0,0,0

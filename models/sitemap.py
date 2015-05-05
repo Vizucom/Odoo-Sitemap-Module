@@ -36,6 +36,6 @@ class SitemapExtended(models.Model):
 
     _name = 'website_sitemap.extended'
 
+    name = fields.Char(string="Title")
     location = fields.Char(string="Location")
-    title = fields.Char(string="Title")
     sitemap_visible = fields.Boolean(string="Visible in Sitemap", default=True)
