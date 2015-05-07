@@ -24,6 +24,7 @@ class Sitemap(osv.osv):
             if not sitemap_info:
                 sitemap_model.create({
                     'location': page['loc'],
+                    'name': page['loc'],
                 })
 
             if not sitemap_info or sitemap_info.sitemap_visible:
