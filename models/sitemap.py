@@ -22,7 +22,7 @@ class Sitemap(osv.osv):
             sitemap_info = sitemap_model.search([('location', '=', page['loc'])])
 
             if not sitemap_info:
-                sitemap_model.create({
+                sitemap_model.sudo().create({
                     'location': page['loc'],
                     'name': page['loc'],
                 })
