@@ -19,7 +19,7 @@ class Sitemap(osv.osv):
         sitemap_model = request.env['website_sitemap.extended']
 
         for page in pages:
-            sitemap_info = sitemap_model.search([('location', '=', page['loc'])])
+            sitemap_info = sitemap_model.search([('location', '=', page['loc'])], limit=1)
 
             if not sitemap_info:
                 sitemap_model.sudo().create({
